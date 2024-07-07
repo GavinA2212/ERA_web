@@ -14,9 +14,14 @@ export default {
       8: "8px",
     },
     extend: {
-      colors: {},
+      colors: {
+        grayT50: "rgba(255,255,255,.5)",
+        grayT70: "rgba(255,255,255,.7)",
+        grayT90: "rgba(255,255,255,.9)",
+        darkbg: "#141416",
+      },
       fontFamily: {
-        DMSans: ["DM Sans", "sans-serif"],
+        Merriweather: ["Merriweather", "sans-serif"],
       },
       fontSize: {},
       spacing: {
@@ -31,6 +36,10 @@ export default {
         3: "3 3 0%",
       },
       borderRadius: {},
+      animation: {
+        fadeIn: "fadeIn .5s ease-out forwards",
+        containerFadeIn: "containerFadeIn 1s ease-in-out forwards",
+      },
     },
   },
   plugins: [],
