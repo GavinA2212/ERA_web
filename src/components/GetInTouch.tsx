@@ -38,7 +38,7 @@ export default function GetInTouch() {
           conversation.
         </h4>
         <a
-          href="mailto:info@yourcompany.com"
+          href="mailto:info@erautomation.com"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-4 text-center text-3xl text-blue-600 underline hover:text-blue-800"
