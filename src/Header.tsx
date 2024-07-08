@@ -22,17 +22,17 @@ export default function Header() {
           onClick={() => setIsOpen(!isOpen)}
         >
           <div
-            className={`bg-darkbg h-1 w-8 transform rounded-sm transition duration-300 ease-in-out ${
+            className={`h-1 w-8 transform rounded-sm bg-darkbg transition duration-300 ease-in-out ${
               isOpen ? "translate-y-3 rotate-45" : ""
             }`}
           />
           <div
-            className={`bg-darkbg h-1 w-8 rounded-sm transition-all duration-300 ease-in-out ${
+            className={`h-1 w-8 rounded-sm bg-darkbg transition-all duration-300 ease-in-out ${
               isOpen ? "opacity-0" : "opacity-100"
             }`}
           />
           <div
-            className={`bg-darkbg h-1 w-8 transform rounded-sm transition duration-300 ease-in-out ${
+            className={`h-1 w-8 transform rounded-sm bg-darkbg transition duration-300 ease-in-out ${
               isOpen ? "-translate-y-2.5 -rotate-45" : ""
             }`}
           />
@@ -51,7 +51,7 @@ export default function Header() {
               } hover:text-gray-400`}
               onClick={() => {
                 setActiveItem(item);
-                navigate(`/${item}`);
+                navigate(item == "Home" ? "/" : `/${item}`);
               }}
             >
               {item}
@@ -87,8 +87,7 @@ export default function Header() {
                 onClick={() => {
                   setActiveItem(item);
                   setIsOpen(!isOpen);
-                  console.log(item);
-                  navigate(`/${item}`);
+                  navigate(item == "Home" ? "/" : `/${item}`);
                 }}
               >
                 {item}

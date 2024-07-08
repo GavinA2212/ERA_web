@@ -13,17 +13,15 @@ export default function Footer() {
           </div>
           <div className="flex flex-col items-center md:items-start">
             <h3 className="font-bold">Contact Us</h3>
-            <p>
+            <p className="mt-1">
               <a
                 target="_blank"
                 href="mailto:info@erautomation.com"
-                className="hover:text-gray-400"
+                className="mt-6 hover:text-gray-400"
               >
                 info@erautomation.com
               </a>
             </p>
-            <p>+123 456 7890</p>
-            <p>123 Business Rd, City, Country</p>
           </div>
           <div className="flex flex-col items-center md:items-start">
             <h3 className="font-bold">Quick Links</h3>
@@ -40,6 +38,9 @@ export default function Footer() {
               Contact
             </a>
           </div>
+        </div>
+        <div className="mt-4 text-center text-sm text-gray-500">
+          © 2023 ERAutomation. All Rights Reserved.
         </div>
       </footer>
     </>
