@@ -20,16 +20,7 @@ function App() {
             </>
           }
         ></Route>
-        <Route
-          path="Home"
-          element={
-            <>
-              <Header />
-              <Home />
-              <Footer />
-            </>
-          }
-        ></Route>
+
         <Route
           path="/About/"
           element={
