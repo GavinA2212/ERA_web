@@ -15,7 +15,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="mt-20 grid grid-cols-1 grid-rows-4 gap-x-20 gap-y-20 md:grid-cols-2 md:grid-rows-2 2xl:grid-cols-4 2xl:grid-rows-1">
+          <div className="mt-20 grid grid-cols-1 grid-rows-4 gap-x-20 gap-y-10 md:grid-cols-2 md:grid-rows-2 2xl:grid-cols-4 2xl:grid-rows-1">
             <HomeContainer
               header="Engineering Services"
               description="ER Automation is a leading provider of robotics, controls, multi-craft, electrical, mechanical integration, and production support. We offer emergency, short-term, and long-term hourly contract support. Our highly skilled specialists enhance current running systems to maximize output and productivity. Customized hourly rates and free quotes are available."
