@@ -30,13 +30,13 @@ export default function Footer() {
             <a href="/" className="hover:text-gray-400">
               Home
             </a>
-            <a href="/about" className="hover:text-gray-400">
+            <a href="/About" className="hover:text-gray-400">
               About Us
             </a>
-            <a href="/services" className="hover:text-gray-400">
+            <a href="/Services" className="hover:text-gray-400">
               Services
             </a>
-            <a href="/contact" className="hover:text-gray-400">
+            <a href="/Contact" className="hover:text-gray-400">
               Contact
             </a>
           </div>
