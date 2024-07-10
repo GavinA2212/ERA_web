@@ -1,0 +1,53 @@
+/**
+ * ==============================================
+ * Dot Flashing
+ * ==============================================
+ */
+
+.dotflashing {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgb(199, 32, 38);
+  color: rgb(199, 32, 38);
+  animation: dotflashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+.dotflashing::before,
+.dotflashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+.dotflashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgb(199, 32, 38);
+  color: rgb(199, 32, 38);
+  animation: dotflashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+.dotflashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgb(199, 32, 38);
+  color: rgb(199, 32, 38);
+  animation: dotflashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dotflashing {
+  0% {
+    background-color: rgb(199, 32, 38);
+  }
+  50%,
+  100% {
+    background-color: rgb(199, 32, 38, 0.2);
+  }
+}
