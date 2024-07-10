@@ -9,6 +9,7 @@ export default function Header() {
   const [activeItem, setActiveItem] = useState("Home");
   const menuItems = ["Home", "About", "Services", "Contact"];
   const navigate = useNavigate();
+  
   return (
     <>
       <header className="border absolute top-0 z-50 flex h-24 w-full items-center border-gray-200 bg-gradient-to-r from-gray-50 to-gray-200 shadow-lg md:fixed">

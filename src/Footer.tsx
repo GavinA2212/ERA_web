@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "/assets/Logo.png";
 
 export default function Footer() {
@@ -25,18 +26,18 @@ export default function Footer() {
           </div>
           <div className="flex flex-col items-center md:items-start">
             <h3 className="font-bold">Quick Links</h3>
-            <a href="/" className="hover:text-gray-400">
+            <Link to="/" className="hover:text-gray-400">
               Home
-            </a>
-            <a href="/about" className="hover:text-gray-400">
+            </Link>
+            <Link to="/About" className="hover:text-gray-400">
               About Us
-            </a>
-            <a href="/services" className="hover:text-gray-400">
+            </Link>
+            <Link to="/Services" className="hover:text-gray-400">
               Services
-            </a>
-            <a href="/contact" className="hover:text-gray-400">
+            </Link>
+            <Link to="/Contact" className="hover:text-gray-400">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
         <div className="mt-4 text-center text-sm text-gray-500">
