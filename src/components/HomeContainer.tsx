@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
+import { useFadeInOnScrollDiv } from "../utils/FadeInOnScroll";
 
 interface HomeContainerProps {
   header: string;
@@ -11,8 +12,7 @@ const HomeContainer: React.FC<HomeContainerProps> = ({
   description,
   image,
 }) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const { containerRef, isVisible } = useFadeInOnScrollDiv(0.2);
 
   const renderDescriptionWithLineBreaks = (text: string) => {
     return text.split("\n").map((line, index, array) => (
@@ -23,35 +23,17 @@ const HomeContainer: React.FC<HomeContainerProps> = ({
     ));
   };
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect(); // Optional: Disconnect observer after the element is visible
-        }
-      },
-      { threshold: 0.2 },
-    );
-
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
-
-    return () => observer.disconnect(); // Cleanup observer on component unmount
-  }, []);
   return (
     <>
       <div ref={containerRef}>
         <div
           id="container"
-          className={`bg-grayT70 flex-col rounded-md ${isVisible ? "animate-containerFadeIn visible" : "invisible"}`}
-        >
+          className={`flex-col rounded-md bg-grayT70 ${isVisible ? "visible animate-containerFadeIn" : "invisible"}`}>
           <img src={image} className="rounded-md"></img>
           <h3 className="mt-2 text-3xl font-semibold text-slate-800">
             {header}
           </h3>
-          <p className="font-Merriweather mt-4 text-left text-sm">
+          <p className="mt-4 text-left font-Merriweather text-sm">
             {renderDescriptionWithLineBreaks(description)}
           </p>
         </div>

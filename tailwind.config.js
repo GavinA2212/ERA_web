@@ -28,6 +28,7 @@ export default {
         13: "3.25rem",
         34: "8.5rem",
         33: "8.25rem",
+        100: "25rem",
         500: "31.25rem",
       },
       screens: {},
@@ -37,10 +38,24 @@ export default {
       },
       borderRadius: {},
       animation: {
+        dot: "dot 1.4s infinite ease-in-out both",
         fadeIn: "fadeIn .5s ease-out forwards",
         containerFadeIn: "containerFadeIn 1s ease-in-out forwards",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // Custom plugin for animation delays
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".animation-delay-200": {
+          animationDelay: "0.2s",
+        },
+        ".animation-delay-400": {
+          animationDelay: "0.4s",
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
 };
