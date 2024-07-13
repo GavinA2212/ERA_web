@@ -1,5 +1,5 @@
 import React from "react";
-import useFadeInOnScroll from "../utils/FadeInOnScroll";
+import { useFadeInOnScrollDiv } from "../utils/FadeInOnScroll";
 
 interface HomeContainerProps {
   header: string;
@@ -7,8 +7,12 @@ interface HomeContainerProps {
   image: string;
 }
 
-const HomeContainer: React.FC<HomeContainerProps> = ({ header, description, image }) => {
-  const { containerRef, isVisible } = useFadeInOnScroll(0.2);
+const HomeContainer: React.FC<HomeContainerProps> = ({
+  header,
+  description,
+  image,
+}) => {
+  const { containerRef, isVisible } = useFadeInOnScrollDiv(0.2);
 
   const renderDescriptionWithLineBreaks = (text: string) => {
     return text.split("\n").map((line, index, array) => (
@@ -26,7 +30,9 @@ const HomeContainer: React.FC<HomeContainerProps> = ({ header, description, imag
           id="container"
           className={`flex-col rounded-md bg-grayT70 ${isVisible ? "visible animate-containerFadeIn" : "invisible"}`}>
           <img src={image} className="rounded-md"></img>
-          <h3 className="mt-2 text-3xl font-semibold text-slate-800">{header}</h3>
+          <h3 className="mt-2 text-3xl font-semibold text-slate-800">
+            {header}
+          </h3>
           <p className="mt-4 text-left font-Merriweather text-sm">
             {renderDescriptionWithLineBreaks(description)}
           </p>

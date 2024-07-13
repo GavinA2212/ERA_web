@@ -1,7 +1,7 @@
-import useFadeInOnScroll from "../utils/FadeInOnScroll";
+import { useFadeInOnScrollDiv } from "../utils/FadeInOnScroll";
 
 export default function GetInTouch() {
-  const { containerRef, isVisible } = useFadeInOnScroll(0.2);
+  const { containerRef, isVisible } = useFadeInOnScrollDiv(0.2);
 
   return (
     <>
