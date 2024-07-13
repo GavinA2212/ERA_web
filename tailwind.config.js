@@ -26,9 +26,11 @@ export default {
       fontSize: {},
       spacing: {
         13: "3.25rem",
+        18: "4.5rem",
         34: "8.5rem",
         33: "8.25rem",
         100: "25rem",
+        400: "25rem",
         500: "31.25rem",
       },
       screens: {},
