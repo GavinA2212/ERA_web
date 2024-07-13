@@ -30,7 +30,7 @@ export default function About() {
             <div
               ref={section1ContainerRef}
               className={`max-w-2xl flex-col items-center ${section1RefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}>
-              <h1 className="mt-16 text-center text-slate-800">
+              <h1 className="mt-16 whitespace-nowrap text-center text-slate-800">
                 Company Overview
               </h1>
               <h2 className="mt-5 text-center font-Merriweather text-sm">
