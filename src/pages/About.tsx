@@ -36,9 +36,16 @@ export default function About() {
               <h2 className="mt-5 text-center font-Merriweather text-sm">
                 ERAutomation is dedicated to revolutionizing the automation
                 industry by providing innovative, efficient, and reliable
-                automation solutions that empower businesses to enhance
-                productivity, reduce operational costs, and achieve
-                sustainable growth.
+                automation solutions. Our goal is to empower businesses to
+                enhance productivity, reduce operational costs, and achieve
+                sustainable growth. We strive to transform how industries
+                operate by integrating cutting-edge technology and
+                customized automation strategies that cater to the unique
+                needs of each client. By focusing on continuous improvement
+                and excellence in every project, ERAutomation aims to be a
+                driving force in the future of automation, helping
+                businesses to stay competitive and thrive in a rapidly
+                evolving marketplace.
               </h2>
             </div>
             <div
@@ -48,10 +55,18 @@ export default function About() {
                 Our Mission
               </h1>
               <h2 className="mt-5 text-center font-Merriweather text-sm">
-                Our goal is to be a global leader in automation technology,
-                driving the future of industry 4.0 by offering cutting-edge
-                solutions that transform the way businesses operate and
-                compete in the digital age.
+                Our goal is to establish ERAutomation as a global leader in
+                automation technology, propelling the future of Industry
+                4.0. We are committed to offering cutting-edge solutions
+                that not only transform the way businesses operate but also
+                enhance their ability to compete in the digital age. By
+                harnessing the latest advancements in automation, we aim to
+                drive innovation, improve efficiency, and enable our
+                clients to achieve unparalleled success in their respective
+                industries. Through our visionary approach and dedication
+                to excellence, we aspire to shape the future of automation
+                and redefine the standards of industry performance and
+                competitiveness.
               </h2>
             </div>
             <div
