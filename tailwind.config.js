@@ -14,12 +14,26 @@ export default {
       8: "8px",
     },
     extend: {
+      backgroundImage: {
+        "vertical-multi-image": "url('/bg1.jpg'), url('/bg1.jpg')",
+      },
+      backgroundPosition: {
+        "vertical-multi-image-pos": "center top, center bottom",
+      },
+      backgroundSize: {
+        "vertical-multi-image-size": "cover, cover",
+      },
+      backgroundRepeat: {
+        "vertical-multi-image-repeat":
+          "no-repeat !important, no-repeat !important",
+      },
       colors: {
         grayT50: "rgba(255,255,255,.5)",
         grayT70: "rgba(255,255,255,.7)",
         grayT90: "rgba(255,255,255,.9)",
         darkbg: "#141416",
       },
+
       fontFamily: {
         Merriweather: ["Merriweather", "sans-serif"],
       },

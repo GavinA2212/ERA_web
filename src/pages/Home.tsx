@@ -16,7 +16,13 @@ export default function Home() {
   }, []);
   return (
     <>
-      <main className="mt-28 flex min-h-screen justify-center to-stone-500 text-4xl">
+      <main
+        className="mt-24 flex min-h-screen justify-center text-4xl"
+        style={{
+          backgroundImage: "url('/assets/bg1.jpg')",
+          backgroundRepeat: "repeat",
+        }}
+      >
         <section className="flex h-full w-11/12 flex-col px-4">
           <div className="flex animate-fadeIn flex-col items-center justify-center">
             <Link

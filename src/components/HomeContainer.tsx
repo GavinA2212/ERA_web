@@ -34,7 +34,7 @@ const HomeContainer: React.FC<HomeContainerProps> = ({
       <div ref={containerRef}>
         <div
           id="container"
-          className={`flex-col rounded-md bg-grayT70 ${isVisible ? "visible animate-containerFadeIn" : "invisible"}`}
+          className={`flex-col rounded-md ${isVisible ? "visible animate-containerFadeIn" : "invisible"}`}
         >
           <Link
             to={href}
