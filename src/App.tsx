@@ -5,43 +5,50 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import { ScrollProvider } from "./context/ScrollContext";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Home />
-            </>
-          }></Route>
+      <ScrollProvider>
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+              </>
+            }
+          ></Route>
 
-        <Route
-          path="/About/"
-          element={
-            <>
-              <About />
-            </>
-          }></Route>
-        <Route
-          path="/Services"
-          element={
-            <>
-              <Services />
-            </>
-          }></Route>
-        <Route
-          path="/Contact"
-          element={
-            <>
-              <Contact />
-            </>
-          }></Route>
-      </Routes>
-      <Footer />
+          <Route
+            path="/About/"
+            element={
+              <>
+                <About />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/Services"
+            element={
+              <>
+                <Services />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/Contact"
+            element={
+              <>
+                <Contact />
+              </>
+            }
+          ></Route>
+        </Routes>
+        <Footer />
+      </ScrollProvider>
     </BrowserRouter>
   );
 }

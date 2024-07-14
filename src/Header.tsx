@@ -9,7 +9,7 @@ export default function Header() {
   const [activeItem, setActiveItem] = useState("Home");
   const menuItems = ["Home", "About", "Services", "Contact"];
   const navigate = useNavigate();
-  
+
   return (
     <>
       <header className="border absolute top-0 z-50 flex h-24 w-full items-center border-gray-200 bg-gradient-to-r from-gray-50 to-gray-200 shadow-lg md:fixed">
@@ -50,7 +50,7 @@ export default function Header() {
                   ? "underline decoration-2 underline-offset-4"
                   : ""
               } hover:text-gray-400`}
-              onClick={() => {
+              onClick={async () => {
                 setActiveItem(item);
                 navigate(item == "Home" ? "/" : `/${item}`);
               }}
@@ -60,7 +60,7 @@ export default function Header() {
           ))}
         </ul>
       </header>
-      =
+
       <div
         id="dim-overlay"
         className={`fixed inset-0 z-40 bg-black transition-opacity duration-300 ease-in-out ${
@@ -85,10 +85,11 @@ export default function Header() {
                     ? "bg-red-600 text-white"
                     : "bg-transparent text-gray-900 hover:bg-gray-100"
                 }`}
-                onClick={() => {
+                onClick={async () => {
                   setActiveItem(item);
                   setIsOpen(!isOpen);
-                  navigate(item == "Home" ? "/" : `/${item}`);
+                  await navigate(item == "Home" ? "/" : `/${item}`);
+                  window.scrollTo(0, 0);
                 }}
               >
                 {item}
