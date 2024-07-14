@@ -18,7 +18,6 @@ export default function Header() {
     { label: "About", path: "/about" },
     { label: "Services", path: "/services" },
   ];
-  console.log(location.pathname);
 
   return (
     <>
@@ -30,7 +29,8 @@ export default function Header() {
         <button
           id="Hamburger Menu"
           className="group z-50 ml-auto mr-6 mt-2 flex h-8 w-8 flex-col items-center justify-around md:hidden"
-          onClick={() => setIsOpen(!isOpen)}>
+          onClick={() => setIsOpen(!isOpen)}
+        >
           <div
             className={`h-1 w-8 transform rounded-sm bg-darkbg transition duration-300 ease-in-out ${
               isOpen ? "translate-y-3 rotate-45" : ""
@@ -49,7 +49,8 @@ export default function Header() {
         </button>
         <ul
           id="large-screen-navlinks"
-          className="ml-auto mr-10 mt-2 hidden items-center justify-around gap-12 text-lg md:flex">
+          className="ml-auto mr-10 mt-2 hidden items-center justify-around gap-12 text-lg md:flex"
+        >
           {menuItems.map((item) => (
             <li
               key={item.label}
@@ -60,24 +61,28 @@ export default function Header() {
               } hover:text-gray-400`}
               onClick={() => {
                 navigate(item.path);
-              }}>
+              }}
+            >
               {item.label}
             </li>
           ))}
         </ul>
       </header>
-      =
       <div
         id="dim-overlay"
         className={`fixed inset-0 z-40 bg-black transition-opacity duration-300 ease-in-out ${
-          isOpen ? "pointer-events-auto opacity-50" : "pointer-events-none opacity-0"
+          isOpen
+            ? "pointer-events-auto opacity-50"
+            : "pointer-events-none opacity-0"
         }`}
-        onClick={() => setIsOpen(false)}></div>
+        onClick={() => setIsOpen(false)}
+      ></div>
       <div
         id="mobile-menu"
         className={`fixed left-0 top-0 z-50 h-full w-64 transform bg-white p-5 transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } shadow-lg`}>
+        } shadow-lg`}
+      >
         <ul id="hamburger-navlinks" className="space-y-4">
           {menuItems.map((item, index) => (
             <li key={index}>
@@ -90,7 +95,8 @@ export default function Header() {
                 onClick={() => {
                   setIsOpen(!isOpen);
                   navigate(item.path);
-                }}>
+                }}
+              >
                 {item.label}
               </button>
             </li>

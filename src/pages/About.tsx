@@ -1,13 +1,10 @@
 import { useEffect } from "react";
+import { useScroll } from "../context/ScrollContext";
 import { useFadeInOnScrollDiv } from "../utils/FadeInOnScroll";
 import Logo from "/assets/Logo.png";
 import { Link } from "react-router-dom";
 
 export default function About() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const {
     containerRef: section1ContainerRef,
     isVisible: section1RefIsVisible,
@@ -24,25 +21,39 @@ export default function About() {
     containerRef: brandsContainerRef,
     isVisible: brandsRefIsVisible,
   } = useFadeInOnScrollDiv(0.2);
+  const { scrollTo, setScrollTo } = useScroll();
+
+  useEffect(() => {
+    if (scrollTo == "") {
+      setScrollTo("");
+      window.scrollTo(0, 0);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
-      <main className="mt-24 flex min-h-screen justify-center font-Merriweather text-4xl">
+      <main className="mt-28 flex min-h-screen justify-center font-Merriweather text-4xl">
         <section className="flex min-h-screen w-11/12 flex-col items-center px-4">
           <Link
             to="/"
-            className="max-w-400 mt-4 flex animate-fadeIn items-center justify-center">
+            className="max-w-400 mt-4 flex animate-fadeIn items-center justify-center md:max-w-500"
+          >
             <img src={Logo} alt="ER Automation Logo"></img>
           </Link>
+          <h2 className="mt-3 text-center font-Merriweather text-base text-black md:mt-5">
+            Empowering Efficiency with Cutting-Edge Automation Solutions
+          </h2>
 
           <div className="flex w-10/12 flex-col items-center">
             <section className="flex h-fit w-full flex-col items-center md:items-end">
               <div
                 ref={section1ContainerRef}
-                className={`max-w-2xl flex-col items-center ${section1RefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}>
-                <h1 className="mt-28 whitespace-nowrap text-center text-slate-800">
+                className={`max-w-2xl flex-col items-center ${section1RefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}
+              >
+                <h1 className="mt-12 whitespace-nowrap text-left text-slate-800">
                   Company Overview
                 </h1>
-                <h2 className="mt-5 text-center font-Merriweather text-sm">
+                <h2 className="mt-5 text-left font-Merriweather text-sm">
                   ERAutomation is dedicated to revolutionizing the
                   automation industry by providing innovative, efficient,
                   and reliable automation solutions. Our goal is to empower
@@ -61,11 +72,12 @@ export default function About() {
             <section className="flex h-fit w-full flex-col items-center md:items-start">
               <div
                 ref={section2ContainerRef}
-                className={`max-w-2xl flex-col items-center ${section2RefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}>
+                className={`max-w-2xl flex-col items-center ${section2RefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}
+              >
                 <h1 className="mt-16 text-center text-slate-800">
                   Our Mission
                 </h1>
-                <h2 className="mt-5 text-center font-Merriweather text-sm">
+                <h2 className="mt-5 text-left font-Merriweather text-sm">
                   Our goal is to establish ERAutomation as a global leader
                   in automation technology, propelling the future of
                   Industry 4.0. We are committed to offering cutting-edge
@@ -85,7 +97,8 @@ export default function About() {
             <section className="flex h-fit w-full flex-col items-center md:items-end">
               <div
                 ref={section3ContainerRef}
-                className={`max-w-2xl flex-col items-center ${section3RefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}>
+                className={`max-w-2xl flex-col items-center ${section3RefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}
+              >
                 <h1 className="mt-16 text-center text-slate-800">
                   Our Values
                 </h1>
@@ -122,7 +135,8 @@ export default function About() {
             </section>
             <div
               ref={brandsContainerRef}
-              className={`flex flex-col ${brandsRefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}>
+              className={`flex flex-col ${brandsRefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}
+            >
               <h1 className="mt-28 text-center text-slate-800">
                 Brands we've worked with:
               </h1>

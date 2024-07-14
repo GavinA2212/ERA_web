@@ -1,6 +1,4 @@
 {
   "plugins": ["prettier-plugin-tailwindcss"],
-  "printWidth": 75,
-  "proseWrap": "never",
-  "jsxBracketSameLine": true
+  "printWidth": 75
 }

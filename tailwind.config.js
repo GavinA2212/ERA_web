@@ -32,6 +32,7 @@ export default {
         100: "25rem",
         400: "25rem",
         500: "31.25rem",
+        636: "39.75rem",
       },
       screens: {},
       flex: {
