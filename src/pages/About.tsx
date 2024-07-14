@@ -135,11 +135,39 @@ export default function About() {
             </section>
             <div
               ref={brandsContainerRef}
-              className={`flex flex-col ${brandsRefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}
+              className={`flex flex-col items-center ${brandsRefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}
             >
               <h1 className="mt-28 text-center text-slate-800">
                 Brands we've worked with:
               </h1>
+              <div className="mt-6 flex flex-col items-start gap-0 text-base md:flex-row md:gap-20">
+                {/* First list of brands */}
+                <div className="flex flex-col items-center">
+                  <ul className="list-disc">
+                    <li>AutoBuild Inc.</li>
+                    <li>MachineCrafters</li>
+                    <li>ElectronixAssembly</li>
+                    <li>SteelWorks Solutions</li>
+                    <li>AutoBuild Inc.</li>
+                    <li>MachineCrafters</li>
+                    <li>ElectronixAssembly</li>
+                    <li>SteelWorks Solutions</li>
+                  </ul>
+                </div>
+                {/* Second list of brands */}
+                <div className="flex flex-col items-start">
+                  <ul className="list-disc">
+                    <li>CodeStream Technologies</li>
+                    <li>CloudNet Services</li>
+                    <li>AI Innovate</li>
+                    <li>Quantum Computing Corp.</li>
+                    <li>CodeStream Technologies</li>
+                    <li>CloudNet Services</li>
+                    <li>AI Innovate</li>
+                    <li>Quantum Computing Corp.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div className="h-80 max-w-2xl"></div>
           </div>
