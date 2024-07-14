@@ -26,10 +26,17 @@ export default function Services() {
         const elementRect = elementRef.current.getBoundingClientRect();
         const absoluteElementTop = elementRect.top + window.pageYOffset;
         const adjustedTop = absoluteElementTop + adjustScroll; // Adjust scroll position
-        window.scrollTo({
-          top: adjustedTop,
-          behavior: scrollOptions.behavior,
-        });
+
+        if ("scrollBehavior" in document.documentElement.style) {
+          // If the browser supports smooth scrolling
+          window.scrollTo({
+            top: adjustedTop,
+            behavior: scrollOptions.behavior,
+          });
+        } else {
+          // Fallback for browsers that do not support smooth scrolling
+          window.scrollTo(0, adjustedTop);
+        }
       }
     };
 
