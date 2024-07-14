@@ -18,6 +18,23 @@ export default function Services() {
       // Adjust the adjustScroll value for md screens and larger
       adjustScroll = 0; // Example value, adjust as needed
     }
+    function smoothScrollTo(yPosition: number) {
+      const startY = window.pageYOffset;
+      const distance = yPosition - startY;
+      const startTime = new Date().getTime();
+
+      function scroll() {
+        const now = new Date().getTime();
+        const time = Math.min(1, (now - startTime) / 600); // Adjust duration here, currently 400ms
+        const timeFunction = time * (2 - time); // EaseInOutQuad function
+        window.scrollTo(0, Math.ceil(timeFunction * distance + startY));
+        if (window.pageYOffset === yPosition) {
+          return; // Stop if we've reached the position
+        }
+        requestAnimationFrame(scroll);
+      }
+      scroll();
+    }
 
     const scrollToElement = (
       elementRef: MutableRefObject<HTMLElement | null>,
@@ -26,7 +43,7 @@ export default function Services() {
         const elementRect = elementRef.current.getBoundingClientRect();
         const absoluteElementTop = elementRect.top + window.pageYOffset;
         const adjustedTop = absoluteElementTop + adjustScroll; // Adjust scroll position
-        window.scrollTo(0, adjustedTop);
+        smoothScrollTo(adjustedTop);
       }
     };
 
