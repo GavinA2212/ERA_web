@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useScroll } from "../context/ScrollContext";
 import { useFadeInOnScrollDiv } from "../utils/FadeInOnScroll";
-import Logo from "/assets/Logo.png";
+import Logo from "/assets/Logo2.png";
 import { Link } from "react-router-dom";
 
 export default function About() {
@@ -36,7 +36,7 @@ export default function About() {
         <section className="flex min-h-screen w-11/12 flex-col items-center px-4">
           <Link
             to="/"
-            className="max-w-400 mt-4 flex animate-fadeIn items-center justify-center md:max-w-500"
+            className="mt-4 flex max-w-400 animate-fadeIn items-center justify-center md:max-w-500"
           >
             <img src={Logo} alt="ER Automation Logo"></img>
           </Link>

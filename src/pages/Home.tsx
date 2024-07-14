@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import GetInTouch from "../components/GetInTouch";
 import HomeContainer from "../components/HomeContainer";
 import { useScroll } from "../context/ScrollContext";
-import Logo from "/assets/Logo.png";
+import Logo from "/assets/Logo2.png";
 import { Link } from "react-router-dom";
 export default function Home() {
   const { scrollTo, setScrollTo } = useScroll();
@@ -21,7 +21,7 @@ export default function Home() {
           <div className="flex animate-fadeIn flex-col items-center justify-center">
             <Link
               to="/"
-              className="max-w-400 mt-4 flex animate-fadeIn items-center justify-center md:max-w-500"
+              className="mt-4 flex max-w-400 animate-fadeIn items-center justify-center md:max-w-500"
             >
               <img src={Logo} alt="ER Automation Logo"></img>
             </Link>
