@@ -19,7 +19,7 @@ export default function Services() {
       adjustScroll = 0; // Example value, adjust as needed
     }
     function smoothScrollTo(yPosition: number) {
-      const startY = window.pageYOffset;
+      const startY = window.scrollY;
       const distance = yPosition - startY;
       const startTime = new Date().getTime();
 
@@ -28,7 +28,7 @@ export default function Services() {
         const time = Math.min(1, (now - startTime) / 600); // Adjust duration here, currently 400ms
         const timeFunction = time * (2 - time); // EaseInOutQuad function
         window.scrollTo(0, Math.ceil(timeFunction * distance + startY));
-        if (window.pageYOffset === yPosition) {
+        if (window.scrollY === yPosition) {
           return; // Stop if we've reached the position
         }
         requestAnimationFrame(scroll);
@@ -41,7 +41,7 @@ export default function Services() {
     ) => {
       if (elementRef.current) {
         const elementRect = elementRef.current.getBoundingClientRect();
-        const absoluteElementTop = elementRect.top + window.pageYOffset;
+        const absoluteElementTop = elementRect.top + window.scrollY;
         const adjustedTop = absoluteElementTop + adjustScroll; // Adjust scroll position
         smoothScrollTo(adjustedTop);
       }
