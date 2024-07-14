@@ -26,17 +26,7 @@ export default function Services() {
         const elementRect = elementRef.current.getBoundingClientRect();
         const absoluteElementTop = elementRect.top + window.pageYOffset;
         const adjustedTop = absoluteElementTop + adjustScroll; // Adjust scroll position
-
-        if ("scrollBehavior" in document.documentElement.style) {
-          // If the browser supports smooth scrolling
-          window.scrollTo({
-            top: adjustedTop,
-            behavior: scrollOptions.behavior,
-          });
-        } else {
-          // Fallback for browsers that do not support smooth scrolling
-          window.scrollTo(0, adjustedTop);
-        }
+        window.scrollTo(0, adjustedTop);
       }
     };
 
@@ -108,7 +98,7 @@ export default function Services() {
           id="service-1"
           className="mt-12 flex h-fit w-11/12 flex-col items-center gap-12 md:mt-24 md:flex-row md:items-start md:justify-center md:gap-16"
         >
-          <div id="text-content" className="max-w-636 h-fit flex-1">
+          <div id="text-content" className="h-fit max-w-636 flex-1">
             <h1 className="mb-10 font-semibold text-slate-800">
               Our Engineering Services{" "}
             </h1>
@@ -168,7 +158,7 @@ export default function Services() {
         >
           <div
             id="text-content"
-            className="max-w-636 h-fit flex-1 md:order-2"
+            className="h-fit max-w-636 flex-1 md:order-2"
           >
             <h1 className="mb-10 font-semibold text-slate-800">
               Our Implemenation Process:{" "}
@@ -227,7 +217,7 @@ export default function Services() {
           id="service-3"
           className="mt-12 flex h-fit w-11/12 flex-col items-center gap-12 md:mt-24 md:flex-row md:items-start md:justify-center md:gap-16"
         >
-          <div id="text-content" className="max-w-636 h-fit flex-1">
+          <div id="text-content" className="h-fit max-w-636 flex-1">
             <h1 className="mb-10 font-semibold text-slate-800">
               Custom Training Packages{" "}
             </h1>
@@ -287,7 +277,7 @@ export default function Services() {
         >
           <div
             id="text-content"
-            className="max-w-636 h-fit flex-1 md:order-2"
+            className="h-fit max-w-636 flex-1 md:order-2"
           >
             <h1 className="mb-10 font-semibold text-slate-800">
               Comprehensive Equipment Maintenance{" "}
