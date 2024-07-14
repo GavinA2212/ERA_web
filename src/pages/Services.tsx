@@ -28,8 +28,8 @@ export default function Services() {
         const time = Math.min(1, (now - startTime) / 600); // Adjust duration here, currently 400ms
         const timeFunction = time * (2 - time); // EaseInOutQuad function
         window.scrollTo(0, Math.ceil(timeFunction * distance + startY));
-        if (window.scrollY === yPosition) {
-          return; // Stop if we've reached the position
+        if (Math.abs(window.scrollY - yPosition) < 5) {
+          return; // Stop if we're close enough to the position
         }
         requestAnimationFrame(scroll);
       }
