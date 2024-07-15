@@ -18,10 +18,6 @@ export default function About() {
     containerRef: section3ContainerRef,
     isVisible: section3RefIsVisible,
   } = useFadeInOnScrollDiv(0.2);
-  const {
-    containerRef: brandsContainerRef,
-    isVisible: brandsRefIsVisible,
-  } = useFadeInOnScrollDiv(0.2);
   const { scrollTo, setScrollTo } = useScroll();
 
   useEffect(() => {
@@ -134,10 +130,7 @@ export default function About() {
                 </ul>
               </div>
             </section>
-            <div
-              ref={brandsContainerRef}
-              className={`flex w-screen flex-col ${brandsRefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}
-            >
+            <div className="flex w-screen flex-col">
               <h1 className="z-40 mb-20 mt-28 text-center text-slate-800">
                 Our Partners:
               </h1>
