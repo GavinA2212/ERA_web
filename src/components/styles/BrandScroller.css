@@ -45,6 +45,11 @@
   align-items: center;
   will-change: transform;
 }
+@media (max-width: 767px) {
+  .logos-slide {
+    animation-duration: 25s; /* Slower speed for smaller screens */
+  }
+}
 
 .logo {
   height: 6.25rem;
