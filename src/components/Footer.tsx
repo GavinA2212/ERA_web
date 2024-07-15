@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Logo from "/assets/Logo2.png";
+import Logo from "/assets/ERALogo.png";
 
 export default function Footer() {
   const navigate = useNavigate();

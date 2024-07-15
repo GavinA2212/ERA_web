@@ -1,4 +1,4 @@
-import Logo from "/assets/Logo2.png";
+import Logo from "/assets/ERALogo.png";
 import { useState } from "react";
 
 import { useLocation, useNavigate } from "react-router-dom";

@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import { useScroll } from "../context/ScrollContext";
 import { useFadeInOnScrollDiv } from "../utils/FadeInOnScroll";
-import Logo from "/assets/Logo2.png";
+import Logo from "/assets/ERALogo.png";
 import { Link } from "react-router-dom";
+import BrandScroller from "../components/BrandScroller";
 
 export default function About() {
   const {
@@ -135,13 +136,14 @@ export default function About() {
             </section>
             <div
               ref={brandsContainerRef}
-              className={`flex flex-col ${brandsRefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}
+              className={`flex w-screen flex-col ${brandsRefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}
             >
-              <h1 className="mt-28 text-center text-slate-800">
-                Brands we've worked with:
+              <h1 className="z-40 mb-20 mt-28 text-center text-slate-800">
+                Our Partners:
               </h1>
+              <BrandScroller />
             </div>
-            <div className="h-80 max-w-2xl"></div>
+            <div className="h-40 w-full"></div>
           </div>
         </section>
       </main>
