@@ -43,6 +43,7 @@
   flex: 0 0 auto;
   animation: 15s slide infinite linear;
   align-items: center;
+  will-change: transform;
 }
 
 .logo {
