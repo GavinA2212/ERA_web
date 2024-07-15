@@ -244,11 +244,11 @@ export default function Services() {
             />
             <ServicesSection
               header="Tailored Training Programs"
-              description="To support our training programs, we create and provide custom training manuals that are tailored to your team's requirements. These manuals are crafted to reinforce the training sessions and serve as valuable reference materials. By addressing the unique aspects of your systems and processes, our manuals ensure that your team can apply their new skills effectively and confidently."
+              description="Our team of experts excels in enhancing current running systems to maximize output and productivity. By leveraging the latest technologies and industry best practices, we identify areas for improvement and implement solutions that drive significant performance gains. Our goal is to help your business achieve greater efficiency and profitability through superior automation solutions."
             />
             <ServicesSection
               header="Custom Training Manuals"
-              description="Our team of experts excels in enhancing current running systems to maximize output and productivity. By leveraging the latest technologies and industry best practices, we identify areas for improvement and implement solutions that drive significant performance gains. Our goal is to help your business achieve greater efficiency and profitability through superior automation solutions."
+              description="To support our training programs, we create and provide custom training manuals that are tailored to your team's requirements. These manuals are crafted to reinforce the training sessions and serve as valuable reference materials. By addressing the unique aspects of your systems and processes, our manuals ensure that your team can apply their new skills effectively and confidently."
             />
             <ServicesSection
               header="Ready to Make a Difference"
