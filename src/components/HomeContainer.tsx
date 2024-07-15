@@ -36,6 +36,12 @@ const HomeContainer: React.FC<HomeContainerProps> = ({
           id="container"
           className={`flex-col rounded-md bg-grayT70 ${isVisible ? "visible animate-containerFadeIn" : "invisible"}`}
         >
+          <div className="flex w-full justify-end">
+            {" "}
+            <span className="mt-1 text-xs font-semibold text-slate-800">
+              Click to learn more{" "}
+            </span>
+          </div>
           <Link
             to={href}
             onClick={() => {
@@ -44,7 +50,7 @@ const HomeContainer: React.FC<HomeContainerProps> = ({
           >
             <img src={image} className="rounded-md"></img>
           </Link>
-          <h3 className="mt-2 text-3xl font-semibold text-slate-800">
+          <h3 className="mt-2 flex text-3xl font-semibold text-slate-800">
             {header}
           </h3>
           <p className="mt-4 text-left font-Merriweather text-sm">
