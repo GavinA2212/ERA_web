@@ -19,12 +19,12 @@ export default function GetInTouch() {
           us and start the conversation.
         </h4>
         <a
-          href="mailto:info@erautomation.com"
+          href="mailto:info@erautomationinc.com"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-4 text-center text-3xl text-blue-600 underline hover:text-blue-800"
         >
-          info@erautomation.com
+          info@erautomationinc.com
         </a>
       </div>
     </>

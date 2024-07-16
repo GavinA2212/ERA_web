@@ -73,7 +73,7 @@ export default function Contact() {
                     helping you achieve your automation goals.
                   </h4>
                   <a
-                    href="mailto:info@erautomation.com"
+                    href="mailto:info@erautomationinc.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-6 inline-block w-fit rounded-full bg-red-600 text-center text-xl font-bold text-white shadow-lg transition duration-300 ease-in-out hover:bg-red-600 hover:shadow-xl focus:outline-none focus:ring-1 focus:ring-red-300 active:bg-red-900"
@@ -105,7 +105,7 @@ export default function Contact() {
                 >
                   <span className="font-bold">Customized Solutions: </span>
                   We offer tailored automation solutions designed to meet
-                  the
+                  the needs of our customers.
                 </li>
                 <li
                   ref={list3ContainerRef}
@@ -138,7 +138,7 @@ export default function Contact() {
               achieve your automation goals.
             </h4>
             <a
-              href="mailto:info@erautomation.com"
+              href="mailto:info@erautomationinc.com"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-block w-fit rounded-full bg-red-600 text-center text-xl font-bold text-white shadow-lg transition duration-300 ease-in-out hover:bg-red-600 hover:shadow-xl focus:outline-none focus:ring-1 focus:ring-red-300 active:bg-red-900"

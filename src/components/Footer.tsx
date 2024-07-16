@@ -25,10 +25,10 @@ export default function Footer() {
             <p className="mt-1">
               <a
                 target="_blank"
-                href="mailto:info@erautomation.com"
+                href="mailto:info@erautomationinc.com"
                 className="mt-6 hover:text-gray-400"
               >
-                info@erautomation.com
+                info@erautomationinc.com
               </a>
             </p>
           </div>
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-4 text-center text-sm text-gray-500">
-          © 2023 ERAutomation. All Rights Reserved.
+          © 2023 ER Automation. All Rights Reserved.
         </div>
       </footer>
     </>
