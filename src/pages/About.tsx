@@ -55,7 +55,7 @@ export default function About() {
                   Company Overview
                 </h1>
                 <h2 className="mt-5 text-left font-Merriweather text-sm">
-                  ERAutomation is dedicated to revolutionizing the
+                  ER Automation is dedicated to revolutionizing the
                   automation industry by providing innovative, efficient,
                   and reliable automation solutions. Our goal is to empower
                   businesses to enhance productivity, reduce operational
@@ -64,8 +64,8 @@ export default function About() {
                   cutting-edge technology and customized automation
                   strategies that cater to the unique needs of each client.
                   By focusing on continuous improvement and excellence in
-                  every project, ERAutomation aims to be a driving force in
-                  the future of automation, helping businesses to stay
+                  every project, ER Automation aims to be a driving force
+                  in the future of automation, helping businesses to stay
                   competitive and thrive in a rapidly evolving marketplace.
                 </h2>
               </div>
@@ -79,7 +79,7 @@ export default function About() {
                   Our Mission
                 </h1>
                 <h2 className="mt-5 text-left font-Merriweather text-sm">
-                  Our goal is to establish ERAutomation as a global leader
+                  Our goal is to establish ER Automation as a global leader
                   in automation technology, propelling the future of
                   Industry 4.0. We are committed to offering cutting-edge
                   solutions that not only transform the way businesses
@@ -117,7 +117,7 @@ export default function About() {
                     solutions that exceed expectations.
                   </li>
                   <li>
-                    <span className="font-bold">Integrity:</span>
+                    <span className="font-bold">Integrity: </span>
                     Upholding the highest standards of honesty and
                     transparency in all business dealings.
                   </li>

@@ -121,11 +121,11 @@ export default function Services() {
             </h1>
             <ServicesSection
               header="Comprehensive Automation Solutions"
-              description="At ERAutomation, we pride ourselves on being a leading provider of a wide range of automation services, including robotics, controls, multi-craft, electrical, mechanical, integration, and production support. Our extensive expertise and innovative approach ensure that we deliver top-notch solutions tailored to meet the unique needs of each client. Whether you are looking to implement new systems or enhance existing ones, our team is dedicated to helping you achieve optimal efficiency and productivity."
+              description="At ER Automation, we pride ourselves on being a leading provider of a wide range of automation services, including robotics, controls, multi-craft, electrical, mechanical, integration, and production support. Our extensive expertise and innovative approach ensure that we deliver top-notch solutions tailored to meet the unique needs of each client. Whether you are looking to implement new systems or enhance existing ones, our team is dedicated to helping you achieve optimal efficiency and productivity."
             />
             <ServicesSection
               header="Flexible Contract Support"
-              description="We understand that different businesses have varying needs when it comes to automation support. That's why we offer flexible contract options, including emergency, short-term, and long-term hourly support. Our highly skilled specialists are ready to assist you with any immediate issues or ongoing projects, ensuring your operations run smoothly and effectively. With ERAutomation, you can count on reliable and responsive service whenever you need it."
+              description="We understand that different businesses have varying needs when it comes to automation support. That's why we offer flexible contract options, including emergency, short-term, and long-term hourly support. Our highly skilled specialists are ready to assist you with any immediate issues or ongoing projects, ensuring your operations run smoothly and effectively. With ER Automation, you can count on reliable and responsive service whenever you need it."
             />
             <ServicesSection
               header="Maximizing Output and Productivity"
@@ -133,24 +133,24 @@ export default function Services() {
             />
             <ServicesSection
               header="Customized Solutions and Free Quotes"
-              description="At ERAutomation, we believe in providing customized solutions that fit your specific requirements and budget. We offer competitive hourly rates tailored to your project's scope and complexity. To help you make informed decisions, we provide free quotes, giving you a clear understanding of the costs involved before you commit. Our commitment to transparency and customer satisfaction ensures you receive the best value for your investment."
+              description="At ER Automation, we believe in providing customized solutions that fit your specific requirements and budget. We offer competitive hourly rates tailored to your project's scope and complexity. To help you make informed decisions, we provide free quotes, giving you a clear understanding of the costs involved before you commit. Our commitment to transparency and customer satisfaction ensures you receive the best value for your investment."
             />
             <p
               ref={contact1ContainerRef}
               className={`mt-6 text-left font-Merriweather text-xs ${contact1ContainerRefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}
             >
-              Discover how ERAutomation can transform your business
+              Discover how ER Automation can transform your business
               operations with our comprehensive automation services.
               Contact us today for a free quote and take the first step
               towards maximizing your productivity and efficiency.
             </p>
             <a
-              href="mailto:info@erautomation.com"
+              href="mailto:info@erautomationinc.com"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 text-center text-sm text-blue-600 underline hover:text-blue-800"
             >
-              info@erautomation.com
+              info@erautomationinc.com
             </a>
           </div>
           <div
@@ -181,12 +181,12 @@ export default function Services() {
               Our Implemenation Process:{" "}
             </h1>
             <ServicesSection
-              header="Day One: Observation and Assessment"
-              description="At ERAutomation, our process begins with a thorough observation of your current running system on the first day. Our team of experts conducts a detailed assessment to understand your existing operations, identify potential areas for improvement, and gather essential data. This step is crucial in creating a tailored plan that addresses your specific needs and challenges."
+              header="Step One: Observation and Analysis"
+              description="At ER Automation, our process begins with a thorough observation of your current running system on the first day. Our team of experts conducts a detailed assessment to understand your existing operations, identify potential areas for improvement, and gather essential data. This step is crucial in creating a tailored plan that addresses your specific needs and challenges."
             />
             <ServicesSection
-              header="Days Two and Three: Implementation and Analysis"
-              description="With scheduled downtime on days two and three, we move forward with the implementation of our customized solutions. Our specialists work diligently to integrate these enhancements seamlessly into your system. During this phase, we provide an in-depth analysis aimed at reducing cycle time, eliminating bottlenecks, and reprocessing weld process points. Our goal is to ensure that every aspect of your system operates at peak efficiency."
+              header="Step Two: Implementation and Refinement"
+              description="With scheduled downtime, we move forward with the implementation of our customized solutions. Our specialists work diligently to integrate these enhancements seamlessly into your system. During this phase, we provide an in-depth analysis aimed at reducing cycle time, eliminating bottlenecks, and reprocessing weld process points. Our goal is to ensure that every aspect of your system operates at peak efficiency."
             />
             <ServicesSection
               header="Optimizing Peripheral Systems"
@@ -200,18 +200,18 @@ export default function Services() {
               ref={contact2ContainerRef}
               className={`mt-6 text-left font-Merriweather text-xs ${contact2ContainerRefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}
             >
-              Discover how ERAutomation can transform your business
+              Discover how ER Automation can transform your business
               operations with our comprehensive automation services.
               Contact us today for a free quote and take the first step
               towards maximizing your productivity and efficiency.
             </p>
             <a
-              href="mailto:info@erautomation.com"
+              href="mailto:info@erautomationinc.com"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 text-center text-sm text-blue-600 underline hover:text-blue-800"
             >
-              info@erautomation.com
+              info@erautomationinc.com
             </a>
           </div>
           <div
@@ -240,11 +240,11 @@ export default function Services() {
             </h1>
             <ServicesSection
               header="Unmatched Expertise"
-              description="With over 50 years of combined automation experience between our two owners, ERAutomation is uniquely positioned to offer some of the best custom training packages in the world. Our extensive knowledge and hands-on experience in the industry allow us to design training programs that are both comprehensive and practical, ensuring your team receives the highest quality education."
+              description="With over 50 years of combined automation experience between our two owners, ER Automation is uniquely positioned to offer some of the best custom training packages in the world. Our extensive knowledge and hands-on experience in the industry allow us to design training programs that are both comprehensive and practical, ensuring your team receives the highest quality education."
             />
             <ServicesSection
               header="Tailored Training Programs"
-              description="Our team of experts excels in enhancing current running systems to maximize output and productivity. By leveraging the latest technologies and industry best practices, we identify areas for improvement and implement solutions that drive significant performance gains. Our goal is to help your business achieve greater efficiency and profitability through superior automation solutions."
+              description="We offer tailored training programs to our clients to help employees assimilate to new or pre-existing technologies and processes in either a classroom setting, hands on education. Whether the training need is basic, intermediate, advanced, or niche-specific (laser, vision, welding, adhesive, or controls), we create and provide custom training designed around your organizations needs. This ensures they come out of the classroom ready to make a difference in your organization."
             />
             <ServicesSection
               header="Custom Training Manuals"
@@ -258,18 +258,18 @@ export default function Services() {
               ref={contact3ContainerRef}
               className={`mt-6 text-left font-Merriweather text-xs ${contact3ContainerRefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}
             >
-              Invest in the future of your business with ERAutomation's
+              Invest in the future of your business with ER Automation's
               custom training packages. Contact us today to learn more
               about how our tailored training solutions can empower your
               team and drive your success.
             </p>
             <a
-              href="mailto:info@erautomation.com"
+              href="mailto:info@erautomationinc.com"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 text-center text-sm text-blue-600 underline hover:text-blue-800"
             >
-              info@erautomation.com
+              info@erautomationinc.com
             </a>
           </div>
           <div
@@ -285,7 +285,7 @@ export default function Services() {
           className="mt-28 flex h-28 w-full items-center justify-center bg-red-600"
         >
           <h1 className="text-center font-Merriweather text-4xl font-medium text-white md:text-5xl">
-            Service/Preventative Maintenance/Repairs
+            Service and Preventative Maintenance
           </h1>
         </section>
         <section
@@ -297,19 +297,19 @@ export default function Services() {
             className="h-fit max-w-636 flex-1 md:order-2"
           >
             <h1 className="mb-10 font-semibold text-slate-800">
-              Comprehensive Equipment Maintenance{" "}
+              Comprehensive Equipment Service and Maintenance{" "}
             </h1>
             <ServicesSection
               header="Full-Service Maintenance"
-              description="ERAutomation provides full-service maintenance for your existing equipment, ensuring it operates at peak performance. Our services include grease and oil changes, motor replacements, dress pack and cable replacements, gearbox repairs, motherboard repairs, safety board repairs, and any other necessary repairs. Our skilled technicians are equipped to handle a wide range of maintenance tasks to restore your equipment to top shape."
+              description="ER Automation provides full-service maintenance for your existing equipment, ensuring it operates at peak performance. Our services include grease and oil changes, motor replacements, dress pack and cable replacements, gearbox repairs, motherboard repairs, safety board repairs, and any other necessary repairs. Our skilled technicians are equipped to handle a wide range of maintenance tasks to restore your equipment to top shape."
             />
             <ServicesSection
               header="Tailored Maintenance Solutions"
-              description="Understanding that each piece of equipment and each business has unique maintenance needs, we offer tailored solutions to meet those specific requirements. Whether you need routine maintenance or specialized repairs, ERAutomation has the expertise to deliver. Call us with your specific maintenance needs, and we will most likely offer the services you require to keep your equipment running smoothly."
+              description="Understanding that each piece of equipment and each business has unique maintenance needs, we offer tailored solutions to meet those specific requirements. Whether you need routine maintenance or specialized repairs, ER Automation has the expertise to deliver. Contact us with your specific maintenance needs, and we will find a solution to keep your equipment running smoothly."
             />
             <ServicesSection
               header="Emergency and Scheduled Support"
-              description="ERAutomation offers both emergency support and scheduled service options to ensure your equipment receives the attention it needs, when it needs it. Our emergency support services are designed to get you back up and running as quickly as possible. While emergency work is billed at ER rates, our team will be on their way promptly to minimize downtime and restore your operations."
+              description="ER Automation offers both emergency support and scheduled service options to ensure your equipment receives the attention it needs, when it needs it. Our emergency support services are designed to get you back up and running as quickly as possible. For emergency service our team can be on their way promptly to minimize downtime and restore your operations."
             />
             <ServicesSection
               header="Cost-Effective Planned Services"
@@ -319,19 +319,19 @@ export default function Services() {
               ref={contact4ContainerRef}
               className={`mt-6 text-left font-Merriweather text-xs ${contact4ContainerRefIsVisible ? "visible animate-containerFadeIn" : "invisible"}`}
             >
-              Ensure the longevity and efficiency of your equipment with
-              ERAutomation's comprehensive maintenance services. Contact us
+              Ensure the longevity and efficiency of your equipment with ER
+              Automation's comprehensive maintenance services. Contact us
               today for specific maintenance needs or to schedule a
               service, and experience the peace of mind that comes with
               knowing your equipment is in expert hands.
             </p>
             <a
-              href="mailto:info@erautomation.com"
+              href="mailto:info@erautomationinc.com"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 text-center text-sm text-blue-600 underline hover:text-blue-800"
             >
-              info@erautomation.com
+              info@erautomationinc.com
             </a>
           </div>
           <div
