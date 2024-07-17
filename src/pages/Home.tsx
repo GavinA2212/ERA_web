@@ -26,8 +26,7 @@ export default function Home() {
               <img src={Logo} alt="ER Automation Logo"></img>
             </Link>
             <h2 className="mt-3 text-center font-Merriweather text-base text-black md:mt-5">
-              TEST2 Empowering Efficiency with Cutting-Edge Automation
-              Solutions
+              Empowering Efficiency with Cutting-Edge Automation Solutions
             </h2>
           </div>
 
